@@ -3,7 +3,7 @@
 
 > *"I didn't build Gravio because I had it all figured out. I built it because I wish it existed when I didn't."*
 
-**[Live Demo →](https://ufidtech.github.io/gravio/)**
+**[Live Demo →](https://gravio-livid.vercel.app)**
 
 ---
 
@@ -58,8 +58,8 @@ No frameworks. No libraries. No build tools. Open `index.html` and it runs.
 
 ```
 gravio/
-├── index.html                  ← Landing page (entry point)
-├── dashboard.html              ← Home screen / dashboard
+├── index.html                  ← Entry point
+├── landing.html                ← Landing page
 ├── css/
 │   ├── variables.css           ← All design tokens (colors, spacing, radius)
 │   ├── base.css                ← Reset, app shell, typography
@@ -68,14 +68,14 @@ gravio/
 ├── js/
 │   ├── landing.js              ← Landing page behaviour + smart routing
 │   ├── classes/
-│   │   ├── Course.js           ← creditUnits, grade, getQualityPoints()
-│   │   ├── Semester.js         ← courses[], getSemesterGPA(), toJSON()
-│   │   ├── Student.js          ← calculateCGPA(), getRecoveryPath()
-│   │   └── Pledge.js           ← rules[], signPledge(), keptCount
+│   │   ├── Course.js
+│   │   ├── Semester.js
+│   │   ├── Student.js
+│   │   └── Pledge.js
 │   └── modules/
-│       ├── storage.js          ← saveStudent(), loadSemesters(), exportAllData()
-│       ├── calculator.js       ← calcSemesterGPA(), calcCumulativeCGPA()
-│       └── router.js           ← checkSession(), getTimeGreeting()
+│       ├── storage.js
+│       ├── calculator.js
+│       └── router.js
 └── pages/
     ├── onboarding.html         ← 3-step first-time setup
     ├── calculator.html         ← Live GPA calculator
@@ -94,11 +94,11 @@ No installation. No npm. No terminal needed.
 2. Open `index.html` in any browser
 3. That's it
 
-```bash
-git clone https://github.com/ufidtech/gravio.git
+​```bash
+git clone https://github.com/ufidscript/gravio.git
 cd gravio
 # Open index.html in your browser
-```
+​```
 
 ---
 
