@@ -68,15 +68,23 @@ gravio/
 ├── js/
 │   ├── landing.js              ← Landing page behaviour + smart routing
 │   ├── classes/
-│   │   ├── Course.js
-│   │   ├── Semester.js
-│   │   ├── Student.js
-│   │   └── Pledge.js
-│   └── modules/
-│       ├── storage.js
+│   │   ├── Course.js           ← creditUnits, grade, getQualityPoints()
+│   │   ├── Semester.js         ← courses[], getSemesterGPA(), toJSON()
+│   │   ├── Student.js          ← calculateCGPA(), getRecoveryPath()
+│   │   └── Pledge.js           ← rules[], signPledge(), keptCount
+│   ├── modules/
+│   │   ├── storage.js          ← saveStudent(), loadSemesters(), exportAllData()
+│   │   ├── calculator.js       ← calcSemesterGPA(), calcCumulativeCGPA()
+│   │   └── router.js           ← checkSession(), getTimeGreeting()
+│   └── pages/                  ← Page-specific scripts
+│       ├── index.js            ← Home screen logic
 │       ├── calculator.js
-│       └── router.js
+│       ├── onboarding.js
+│       ├── orbit.js
+│       ├── pledge.js
+│       └── profile.js
 └── pages/
+    ├── home.html               ← Home screen / dashboard
     ├── onboarding.html         ← 3-step first-time setup
     ├── calculator.html         ← Live GPA calculator
     ├── orbit.html              ← Recovery path planner
